@@ -115,8 +115,8 @@ def main(project_id, dataset_id, table_name, data_path):
         project_id,
         dataset_id,
         table_name)
-    email_text = open('emailtxt.txt', 'a')
-    email_text.close()
+    
+    
 # [END main]
 
 
@@ -169,4 +169,6 @@ if __name__ == '__main__':
         else:
             print  "{} is too old or not in folder. Skipped".format(f)
             nbFilesSkipped = nbFilesSkipped + 1
+    email_text = open('emailtxt.txt', 'a')
     email_text.write('\n Big Xanadu:\n Number of Jobs Completed: {}\n Number of files Skipped: {}\n Number of jobs with errors: {}'.format(nbJobsCompleted, nbFilesSkipped, nbErrors))
+    email_text.close()

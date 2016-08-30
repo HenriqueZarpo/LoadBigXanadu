@@ -49,7 +49,7 @@ def removefirstline(inf,outf):
                 f1.write(line)
 
 
-version=0.241
+version=0.25
 
 
 class BLS:
